@@ -1,0 +1,22 @@
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .kamis{
+    margin-left: 150px;
+  }
+  .kamitis {
+    width: 600px;
+    height: 600px;
+  }
+  .cukas{
+    margin-left: 1000px;
+    float: top;
+  }
+  .cucinas{
+    width: 600px;
+    height: 600px;
+    padding: auto;
+  }
