@@ -1,22 +1,42 @@
-.box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
-  .kamis{
-    margin-left: 150px;
-  }
-  .kamitis {
-    width: 600px;
-    height: 600px;
-  }
-  .cukas{
-    margin-left: 1000px;
-    float: top;
-  }
-  .cucinas{
-    width: 600px;
-    height: 600px;
-    padding: auto;
-  }
+/* gallery display */
+.photos {
+  display:flex;
+  grid-template-columns: 500px 500px;
+}
+
+.photos ul {
+  list-style: none;
+
+}
+
+.photos ul li { 
+    display: inline;
+    list-style: none;
+    float: left;
+    padding: 0 10px 0 0;
+    text-align:center; 
+}
+
+.photos ul li span a {
+    background-color: #fff;
+}
+
+.photos ul li a {
+
+  display: block;
+  /*
+  margin-right: 10px;
+  margin-bottom: 7px; */
+  opacity: 0.75;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.photos ul li a:hover {
+  opacity: 1.0;
+}
+
+.photos ul li a img {
+  border: 6px solid #e1d9ec;
+} 
