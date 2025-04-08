@@ -1,42 +1,85 @@
-
+/*paņemts no https://stackoverflow.com/questions/18820850/html-css-text-under-image un chatgpt lai novietotu attēlus.
 /* gallery display */
-.photos {
-  display:flex;
-  grid-template-columns: 500px 500px;
-}
 
+html{
+  background-color: #54728C;
+}
 .photos ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px; 
+  padding: 0;
+  margin: 0;
+}
+
+.photos ul li {
   list-style: none;
-
-}
-
-.photos ul li { 
-    display: inline;
-    list-style: none;
-    float: left;
-    padding: 0 10px 0 0;
-    text-align:center; 
-}
-
-.photos ul li span a {
-    background-color: #fff;
-}
-
-.photos ul li a {
-
-  display: block;
-  /*
-  margin-right: 10px;
-  margin-bottom: 7px; */
-  opacity: 0.75;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.photos ul li a:hover {
-  opacity: 1.0;
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
 }
 
 .photos ul li a img {
-  border: 6px solid #e1d9ec;
-} 
+  max-width: 100%; 
+  height: auto; 
+  border: 6px solid #e1d9ec; 
+}
+
+.photos ul li span h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.photos ul li a button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #f2d98d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px; 
+}
+
+.photos ul li a button:hover {
+  background-color: #da736a;
+}
+
+h1{
+  text-align: center;
+  color: #f2d98d;
+  font-size: 60px;
+}
+.teksts {
+  margin-left: 800px;
+  margin-top: 150px;
+  background-color: #da736a;
+  border-style: double;
+  border: 6px solid #f2d98d;
+  padding: 10px;
+
+}
+
+img{
+  float: left;
+  height: 600px;
+  width: 600px;
+  margin-left: 100px;
+  margin-top: 80px;
+}
+form{
+  margin-top: 300px;
+  text-align: center;
+  background-color: #da736a;
+  padding: 10px;
+}
+
+button{
+  background-color:#f2d98d
+}
+
+iframe{
+  justify-content: center;
+  margin-left: 560px;
+  margin-top: 150px;
+}
